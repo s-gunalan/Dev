@@ -1,0 +1,88 @@
+body{
+margin:0;
+border:0;
+font-family: sans;
+color: white;
+text-transform: capitalize;
+background:linear-gradient(to right bottom,black,#2C3539);
+}
+
+@font-face {
+    font-family: sans;
+    src: url("/guna/Bizzy/fonts/Sansation-Light.ttf");
+    format('truetype');
+}
+
+#header{
+top:0px;
+left:0px;
+height:110px;
+line-height: 1.25;
+margin:0;
+border:1px;
+font-size:60px;
+text-indent:200px;
+text-shadow: 2px 1px black;
+background:linear-gradient(to left top,#2C3539,black);
+}
+#header.tagline{
+font-size:15px;
+background:none;
+text-indent:204px;
+}
+
+#content{
+margin:0;
+background:linear-gradient(circle,black,#2C3539);
+height:470px;
+border-color: black;
+border-style: ridge;
+border-width:1px 0px 1px 0px ;
+}
+#content.iq,
+#content.lazer,
+#content.outbox,
+#content.isis,
+#content.craze{
+margin:5px;
+position:relative;
+padding:20px;
+height:80px;
+width:100px;
+box-shadow:outset 20px 20px 20px 20px silver;
+border-top-left-radius:90px;
+border-top-right-radius:90px;
+border-bottom-left-radius:90px;
+border-bottom-right-radius:90px;
+border-width:0px 15px 5px 0px black;
+position: relative;
+top: 50%;
+left: 30%;
+text-align:center;
+transition: all 400ms ease;
+ overflow: hidden;
+font-size:0px;
+background: url("https://ae01.alicdn.com/kf/HTB1LBMgXlfxLuJjy0Fnq6AZbXXaT/-font-b-cards-b-font-poker-the-font-b-game-b-font-font-b-Ace.jpg");
+}
+#content.iq:active,
+#content.lazer:active,
+#content.iq:hover,
+#content.lazer:hover,
+#content.isis:active,
+#content.isis:hover,
+#content.outbox:active,
+#content.outbox:hover,
+#content.craze:active,
+#content.craze:hover{
+cubic-bezier(5,5,0,0);
+margin-top:-20%;
+padding:40px;
+font-color:yellow; 
+font-size:200%;
+}
+
+
+#footer{
+border-width:1px 0px 1px 0px ;
+font-size:10px;
+}
