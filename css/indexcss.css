@@ -4,7 +4,17 @@ border:0;
 font-family: sans;
 color: white;
 text-transform: capitalize;
-background:linear-gradient(black,#2C3539,black);
+background: url("/Dev/images/homebg.jpg");
+background-size:cover; 
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @font-face {
@@ -13,8 +23,9 @@ background:linear-gradient(black,#2C3539,black);
     format('truetype');
 }
 a{
- text-decoration: none !important;
- color:black;
+ text-decoration: none;
+ color:white;
+ text-align:center;
 }
 
 
@@ -25,7 +36,6 @@ margin-left:70px;
 width:80px;
 height:80px;
 background-color: black;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 border-top-left-radius:100px;
 border-top-right-radius:100px;
 border-bottom-left-radius:100px;
@@ -35,14 +45,14 @@ border-width:0px 15px 5px 0px black;
 #header{
 padding:10px;
 left:0px;
-height:80px;
+height:100px;
 line-height: 1.25;
 position:relative;
 border:1px;
 font-size:50px;
 text-indent:60px;
 text-shadow: 2px 1px black;
-background:linear-gradient(black,#2C3539,black);
+background: linear-gradient(to right, rgba(0,0,0,3), rgba(0,0,0,0));
 }
 #header.tagline{
 margin-top:-10px;
@@ -54,9 +64,6 @@ text-indent:64px;
 #content{
 padding:0px;
 height:450px;
-border-color: black;
-border-style: ridge;
-border-width:1px 0px 1px 0px ;
 }
 #content.iq,
 #content.lazer,
@@ -64,56 +71,99 @@ border-width:1px 0px 1px 0px ;
 #content.isis,
 #content.craze{
 margin-left:20px;
+margin-bottom:90px;
 position:relative;
 padding:20px;
 height:130px;
 width:130px;
 top:30%;
 left:15%;
-box-shadow:outset 20px 20px 20px 20px silver;
-border-top-left-radius:50px;
-border-top-right-radius:50px;
-border-bottom-left-radius:50px;
-border-bottom-right-radius:50px;
-border-width:0px 15px 5px 0px black;
-filter:drop-shadow(8px 8px 10px black);
 transition: all 200ms ease;
 overflow: hidden;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 display:inline-block;
-font-size:0;
+font-size:200%;
+text-align:center;
+background-filter:alpha(opacity=50);
 }
 .iq{
-background: url("/Dev/images/iqhome.jpg") 45%;
+background: url("/Dev/images/iqlogo.png") ;
+background-size:100% 80% ;
+background-repeat: no-repeat; 
+font-size:250px;
+}
+.outbox{
+background: url("/Dev/images/gift-box (1).png");
+background-size:cover; 
+}
+.lazer{
+border-top-left-radius:100px;
+border-top-right-radius:100px;
+background-size:100% 80% ;
+background-repeat: no-repeat; 
+background: url("/Dev/images/lazerhome.png");
+background-size:cover; 
+}
+.isis{
+background: url("/Dev/images/isishome.png");
+background-size:100% 80% ;
+background-repeat: no-repeat; 
+}
+.craze{
+background: url("/Dev/images/crazehome.png");
 background-size:cover; 
 }
 #content.iq:active,
-#content.lazer:active,
-#content.iq:hover,
-#content.lazer:hover,
-#content.isis:active,
-#content.isis:hover,
-#content.outbox:active,
-#content.outbox:hover,
-#content.craze:active,
-#content.craze:hover{
+#content.iq:hover{
 cubic-bezier(15,15,15,15);
 margin-top:-20%;
 padding:50px;
-font-size:150%;
+font-size:0%;
 text-shadow: 2px 1px white;
-border-top-left-radius:0px;
-border-top-right-radius:0px;
-border-bottom-left-radius:0px;
-border-bottom-right-radius:0px;
 background: url("/Dev/images/iqhover.jpg") 50%;
 background-size:cover;
-text-align:  center;
 }
-
-
+#content.lazer:active,
+#content.lazer:hover{
+cubic-bezier(15,15,15,15);
+margin-top:-20%;
+border-top-left-radius:0px;
+border-top-right-radius:0px;
+padding:50px;
+font-size:0%;
+background: url("/Dev/images/lazerhover.jpg") 50%;
+background-size:cover;
+}
+#content.isis:active,
+#content.isis:hover{
+cubic-bezier(15,15,15,15);
+margin-top:-20%;
+padding:50px;
+font-size:0%;
+background: url("/Dev/images/isishover.jpg") 30%;
+background-size:cover;
+}
+#content.outbox:active,
+#content.outbox:hover
+{
+cubic-bezier(15,15,15,15);
+margin-top:-20%;
+padding:50px;
+font-size:0%;
+background: url("/Dev/images/iqhover.jpg") 50%;
+background-size:cover;
+}
+#content.craze:active,
+#content.craze:hover
+{
+cubic-bezier(15,15,15,15);
+margin-top:-20%;
+padding:50px;
+font-size:0%;
+background: url("/Dev/images/iqhover.jpg") 50%;
+background-size:cover;
+}
 #footer{
-margin-top:0px;
+margin-bottom:0px;
 border-width:1px 0px 1px 0px ;
 font-size:10px;
 height:90px;
