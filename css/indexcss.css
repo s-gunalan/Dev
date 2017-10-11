@@ -110,7 +110,9 @@ background-repeat: no-repeat;
 }
 .craze{
 background: url("/Dev/images/crazehome.png");
-background-size:cover; 
+background-size:contain;
+background-repeat: no-repeat;
+font-size:0%;
 }
 #content.iq:active,
 #content.iq:hover{
